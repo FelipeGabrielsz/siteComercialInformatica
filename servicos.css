@@ -1,0 +1,126 @@
+header{
+    background-color: #CCCCCC;
+    padding: 0 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 0px 0px 0.5em #666;
+             
+}
+
+.caixa{
+    position: relative; /*Criando um ponto de posição para que vire uma "caixa" para poder colocar o nav dentro*/
+    width: 940px;
+    padding: 0 auto;
+}
+
+#logo{
+    width: 177x;
+    height: 250px;
+}
+.banner-nav {
+    position: absolute;
+    top:130px;
+    right: -10px;
+}
+.banner-li {
+    display: inline;
+    padding-left: 15px;
+    margin: 0 0 0 15px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border-width: 1px;  /*Define a espessura da borda*/
+    border-style: solid;    /*Define ela como solida, ou seja, "aparece" a borda*/
+    border-radius: 10px; /*Deixa os cantos arredondados*/
+}
+
+.banner-li:hover{
+    border-color:#C78C19 ;
+}
+
+.banner-li:active{
+    box-shadow: 0px 0px 1em darkslategrey;
+}
+
+.banner-a {
+    
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+/*FIM DO CABEÇALHO*/
+
+main{
+    width: 940px;
+    margin: 40px 0;
+}
+
+hr {
+    margin-left: 5%;
+    margin-top: 40px;
+    width: 1300px;
+    padding: 1px 1px 1px 1px;
+    background-color: #CCCCCC;
+}
+
+.descricao-servico {
+    margin-left: 170px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid darkorange;
+    width: 940px;
+    height: 200px;
+    
+}
+
+.descricao-servico:hover{
+    transform: scale(1);
+    transition: all;
+    text-align: center;
+    font-size: 15px;
+    box-shadow: 0px 0px 0.5em black;
+    
+}
+
+.descricao-servico-dois {
+    margin-top: 30px;
+    margin-left: 170px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #CCCCCC;
+    width: 940px;
+    height: 200px;
+    
+}
+
+
+/*COMEÇO DO RODAPÉ*/
+.footer-rodape{ /*Está identificando o rodapé*/
+    text-align: center;
+    position: relative;
+    /*background: url("imagens/fundo-rodape.jpg");*/
+    background-color: black;
+    width: auto;
+    height: auto;
+    top: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 10px ;
+    box-shadow: 0px 0px 0.5em #666;
+    padding: 40px 0;
+
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+footer img {
+    width: 80x;
+    height: 115px;
+}
+/*FIM DO RODAPÉ*/

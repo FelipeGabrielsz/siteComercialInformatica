@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="contatos.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img id="logo" src="imagens/logo.png" alt="logo"></h1>
+                <nav class="banner-nav">
+                    <ul>
+                        <li class="banner-li"><a class="banner-a" href="index.html">home</a></li>
+                        <li class="banner-li"><a class="banner-a" href="servicos.html">serviços</a></li>
+                        <li class="banner-li"><a class="banner-a" href="contato.html">contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+
+                <label for="nomesobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nomesobrenome" class="dados" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone"  class="dados" required placeholder="(xx) xxxxx-xxxx">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" class="dados" required placeholder="seuemail@dominio.com">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="40" rows="10" id="mensagem" class="dados"></textarea>
+
+                <fieldset>
+
+                <legend>Qual é a preferência de resposta?</legend>
+                    <label for="WhatsApp">
+                        <input type="radio" value="whatsapp" name="preferencia-resposta" id="WhatsApp">
+                    WhatsApp</label>
+
+                    <label for="email">
+                        <input type="radio" name="preferencia-resposta" id="email" checked>
+                    E-mail</label>
+
+                    <label for="ligacao">
+                        <input type="radio" value="ligacao" name="preferencia-resposta" id="ligacao" >
+                    Ligação</label>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+            </form> 
+
+            <div>
+                <p id="horario-atendimento">Horários de atendimento:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Dia</td>
+                            <td>Horário</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda</td>
+                            <td>8h ~ 18h</td>
+                        </tr>
+                        <tr>
+                            <td>Terça</td>
+                            <td>8h ~ 18h</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td>8h ~ 18h</td>
+                        </tr>
+                        <tr>
+                            <td>Quinta</td>
+                            <td>8h ~ 18h</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta</td>
+                            <td>8h ~ 18h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <form>
+
+                <input type="submit" class="envio">
+                
+            </form>     
+
+        </main>
+        <footer class="footer-rodape">
+            <nav id="nav-logos">
+                <ul class="ul-lista">
+                    <li class="li-lista">
+                        <img class="img-logos" id="logo-email" src="imagens/logo-email.png" alt="">
+                        <p class="p-lista">Email: inform.2m@gmail.com</p>
+                    </li>
+                    <li class="li-lista">
+                        <img class="img-logos" id="logo-whats" src="imagens/logo-whats.png" alt="">
+                        <p class="p-lista">Fone: (51)33346680</p>
+                    </li>
+                    <li class="li-lista">
+                        <img class="img-logos" id="logo-facebook" src="imagens/logo-facebook.png" alt="">
+                        <p class="p-lista">infor.matica252</p>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
